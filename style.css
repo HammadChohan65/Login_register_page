@@ -1,0 +1,103 @@
+*{
+    margin:0px ;
+    padding:0px ;
+    color: darkolivegreen;
+    font-family: segoe UI;
+}
+body{
+    background-image: linear-gradient(hsla(0,0%,50%,0.5),hsla(0,0%,50%,0.5)),url("bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.submain{
+    width: 30%;
+    height:70vh;
+    margin: 10% auto;
+    padding:0.8rem 0rem;
+    background-color: #EEEEEE;
+    position: relative;
+    overflow: hidden;
+}
+.toggle{
+    margin:2rem auto;
+    width:85%;
+    border-radius:30px;
+    border:1px solid white;
+    box-sizing:border-box;
+    box-shadow:0px 0px 5px #EEEEEE ;
+}
+.toggle-btn{
+    height:3rem;
+    width:49%  ;
+    display:inline-block;
+    border:none;
+    outline:none;
+    background:transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#toggle-btn-div1,#toggle-btn-div2{
+    height:100%;
+    width:49%;
+    display:inline-block;
+    border-radius:30px;
+    background-image: linear-gradient(to left,rgb(0,110,100),rgb(0,150,150));
+    transition: 1s;
+}
+#toggle-btn-div1 button span{
+    color:white;
+}
+#toggle-btn-div2{
+    background:none;
+}
+#toggle-btn-div1 span,#toggle-btn-div2 span{
+    margin-left: 50%;
+    color:darkolivegreen;
+    font-family: segoe print;
+}
+.icons i{
+    color:rgb(0,150,150);
+    cursor: pointer;
+}
+.icons{
+    width:85%;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+form{
+    width:85%;
+    margin: 1.5rem auto;
+}
+#ep input,#ep2 input{
+    width:90%;
+    height: 1.5rem;
+    display:block;
+    outline:none;
+    border:none;
+    border-radius: 1.5rem;
+    padding:0.5rem 0.8rem;
+}
+#form-2{
+    position: absolute;
+    top:35%;
+    left:120%;
+}
+form input{
+    margin-top: 1rem;
+}
+form #login-btn,form #register-btn{
+    display: block;
+    margin: 3rem auto;
+    padding:0.7rem 1.8rem;
+    background-image: linear-gradient(to left,rgb(0,110,100),rgb(0,150,150));
+    border:none;
+    outline:none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    color:white;
+}
+
+
+

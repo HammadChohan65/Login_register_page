@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d2daa53ff4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="submain" id = "submain">
+            <div class="toggle">
+                <div id="toggle-btn-div1">      
+                <button class="toggle-btn" onclick="login()"><span id="span-1">Login</span></button></div>
+                <div id="toggle-btn-div2">
+                <button class="toggle-btn" onclick="register()"><span id="span-2">Register</span> </button></div>
+            </div>
+            <div class="icons">
+                <i class="fab fa-facebook-square fa-3x"></i>
+                <i class="fab fa-youtube fa-3x"></i>
+                <i class="fab fa-instagram fa-3x"></i>
+                <i class="fab fa-twitter fa-3x"></i>
+            </div>
+            <form action="" id = "form-1">
+                <div id = "ep">
+                <input type="email" required placeholder="Enter Your Email">
+                <input type="password" required placeholder="Enter Your Password"></div>
+                <input type="checkbox" id="checkbox"><span>Remember my password</span>
+                <button type="submit" id="login-btn" ondblclick="logMsg()">Login</button>
+            </form>
+
+            <form action="" id = "form-2">
+                <div id = "ep2">
+                <input type="text" required placeholder="Enter Your full Name" id = "name">
+                <input type="email" required placeholder="Enter Your Email">
+                <input type="password" required placeholder="Enter Your Password"></div>
+                <input type="checkbox" id="checkbox"><span>I agree to term and conditions</span>
+                <button type="submit" id="register-btn" ondblclick="regMsg()">Register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        let log = document.getElementById("form-1");
+        let rig = document.getElementById("form-2");
+       function login(){
+           log.style = "left:7.5%;position:absolute;";
+           rig.style.left = "120%";
+           document.getElementById("toggle-btn-div2").style = "background:none;";
+           document.getElementById("toggle-btn-div1").style = "background-image: linear-gradient(to left,rgb(0,110,100),rgb(0,150,150));"
+           document.getElementById("span-2").style = "color:darkolivegreen;"
+           document.getElementById("span-1").style = "color:white;";
+
+       }
+       function register(){
+           log.style = "left:120%;position:absolute;";
+           rig.style.left = "7.5%";
+           document.getElementById("toggle-btn-div1").style = "background:none;color:black;";
+           document.getElementById("toggle-btn-div2").style = "background-image: linear-gradient(to left,rgb(0,110,100),rgb(0,150,150));"
+           document.getElementById("span-1").style = "color:darkolivegreen;"
+           document.getElementById("span-2").style = "color:white;"
+           document.getElementById("register-btn").style.margin = "2rem auto";
+        }
+        
+        // function regMsg(){
+        //     let name =  document.getElementById("name").value;
+        //     document.getElementById("submain").innerHTML = `Welcome ${name}!
+        //      you have registered successfully 
+        //      Thansks` ;
+        // }
+
+        // function logMsg(){
+        //     document.getElementById("submain").innerHTML = `Welcome!
+        //      you have loged in successfully
+        //       Thansks` ;
+        // }
+
+    </script>
+</body>
+</html>
